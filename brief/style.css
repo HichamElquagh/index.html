@@ -1,5 +1,50 @@
 body{
-background-color: #eeeae4;
+/* background-color: #b87a1f; */
 box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif;
+}
+header nav .item{
+    display: flex;
+    justify-content:space-between
+}
+.logogame img {
+    width: 60px;
+    padding-left: 10px;
+    height: 60px;
+}
+
+header nav  .itemnav ul  {
+    display: flex;
+    list-style-type: none;
+}
+header nav  .item .itemnav ul :hover{
+font-size: large;
+
+
+}
+
+header nav  .item .itemnav ul a{
+
+display: flex;
+padding-right: 170px;
+color: black;
+}
+
+header .itembread ul {
+display: flex;
+list-style-type: none;
+}
+header .itembread ul a {
+    display: flex;
+    padding-left: 30px;
+    color: black;
+}
+header .itembread ul  :hover{
+    font-size: large;
+
+}
+section .secstep{
+
+
+    
 }
