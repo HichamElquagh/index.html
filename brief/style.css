@@ -2,8 +2,10 @@ body{
 /* background-color: #b87a1f; */
 box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif;
+background-color: antiquewhite;
 }
-header nav .item{
+/* div prancipal qui contient logo est itemnav  */
+header nav .item{ 
     display: flex;
     justify-content:space-between
 }
@@ -17,47 +19,66 @@ header nav  .itemnav ul  {
     display: flex;
     list-style-type: none;
 }
-header nav  .item .itemnav ul :hover{
+header nav  .item .itemnav ul li :hover{
 font-size: large;
-
-
+text-decoration: underline;
 }
 
-header nav  .item .itemnav ul a{
-
+header nav  .item .itemnav ul  a{
 display: flex;
 padding-right: 170px;
 color: black;
+font-weight: 700;
+text-decoration: none;
 }
 
 header .itembread ul {
 display: flex;
 list-style-type: none;
+padding-left: 10PX;
 }
-header .itembread ul a {
+header .itembread ul  a {
     display: flex;
-    padding-left: 30px;
-    color: black;
+    color:gray;
+    font-weight: 700;
+    text-decoration: none;
+    
 }
-header .itembread ul  :hover{
+header .itembread ul li :hover{
     font-size: large;
+    text-decoration: underline;
+}
+span{
+    margin: 0px 30PX;
 
 }
-main section .secstep{
-
-}
-
-
-
 main section .gameimage img{
-   
     width: 270PX;
     height: 320PX;
 }
-main section .all{
+
+main section .article1{
 border: 3px solid black;
 width: 270px;
-padding-left: 10PX;
+/* padding-left: 10PX; */
+}
 
+main .article1{
+    margin: 10px;
+    padding: 10px;
+}
+/* cela  pour mettre  le contenu de section horizental  */
+main #article{
+    display: flex;
+}
+/* cela pour editer le text */
+main .para{
+    margin-left: 10px;
+}
 
+ .pricecolor{
+color: gray;
+}
+ .parcolor{
+    color: green;
 }
