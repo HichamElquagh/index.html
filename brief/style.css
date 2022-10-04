@@ -4,10 +4,7 @@ box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif;
 background-color: rgb(240, 236, 236);
 }
- 
-    
 
-   @media screen and (min-width:1024px) {  
  /* div prancipal qui contient logo est itemnav  */
     header nav { 
         display: flex;
@@ -27,6 +24,9 @@ background-color: rgb(240, 236, 236);
         text-decoration: none;
         
     }
+    header nav {
+        width: 100%;
+    }
 
     header nav  .itemnav ul   {
         display: flex;
@@ -37,9 +37,6 @@ background-color: rgb(240, 236, 236);
         font-size: large;
         text-decoration: underline;
     }
-
-
-
     header .itembread ul {
         display: flex;
         list-style-type: none;
@@ -49,8 +46,7 @@ background-color: rgb(240, 236, 236);
         display: flex;
         color:gray;
         font-weight: 700;
-        text-decoration: none;
-        
+        text-decoration: none;  
     }
     header .itembread ul li :hover{
         font-size: large;
@@ -58,14 +54,12 @@ background-color: rgb(240, 236, 236);
     }
     span{
         margin: 0px 30PX;
-
     }
     main section .gameimage img{
         width: 175PX;
         height: 250PX;
     }
-
-    main section .article1{
+    main .article1{
     border: 3px solid black;
     width: 200px;
     /* padding-left: 10PX; */
@@ -83,137 +77,57 @@ background-color: rgb(240, 236, 236);
     main .para{
         margin-left: 10px;
     }
-
     .pricecolor{
-    color: gray;
+        color: gray;
     }
     .parcolor{
         color: green;
     }
-}  
+ 
 
 
 
- /* for tablet */
+ 
  @media screen and (max-width:768px) {
-
-    .logogame img {
+    header nav{
         display: block;
+    }
+    header nav  .itemnav ul li a{
+        margin-left: 0px;
+         margin-right: 20px;
+        padding-right: 16px;
+        padding: 0px; 
+        font-size: 15px; 
+    }
+    .logogame img {
+        display: block;       
         margin-left: auto;
         margin-right: auto;
         width: 20%;
         height: 60PX; 
     }
-    header nav  .itemnav ul li a{
-        display: flex;
-        color: black;
-        font-weight:900;
-        text-decoration: none;
-        margin-right: 6px;
-    }
-    header nav .itemnav ul{
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;  
-    }
-    header nav  .itemnav ul li  :hover{
-        font-size: large;
-        text-decoration: underline;
-    }
-    header  .itembread ul  {
-        display: flex;
-        list-style-type:none;
-    } 
-    header .itembread ul li {
-        margin-right: 10px;
-    }
     header .itembread ul li .item2{
         color: blue;
     }
     header .itembread ul li .item3{
         color: black;
     }
-   ul span {
-        margin-right: 10px;
-   }
-   main section .para {
-        margin-left: 20px;
+    ul span {
+        margin-left: 1px;
    }
     main #article{
         display:block ;
     }
     main .article1{
-        border: 5px solid rgb(143, 128, 128);
-        width: 60%;
-        padding-left: 30px;
-        margin-left: 140px;
-        margin-bottom: 10px;
-       
-        
+        margin-left: 0;
+        width: 300PX;
     }
-    .gameimage img {
-        width: 90% ;
-        height: 400PX;
+    main .article1 .gameimage img{
+        width: 270px;
     }
-
- }
-
-
- /* for mobile */
-@media screen and (max-width:425px) {
-   
-    .logogame img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        height: 60PX; 
+}
+    @media print {
+        nav .itemnav{
+            display: none;
+        }
     }
-    header nav  .itemnav ul li a{
-        display: flex;
-        color: black;
-        font-weight:900;
-        text-decoration: none;
-        margin-right: 6px;
-    }
-    header nav .itemnav ul{
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;  
-    }
-    header nav  .itemnav ul li  :hover{
-        font-size: large;
-        text-decoration: underline;
-    }
-    header  .itembread ul  {
-        display: flex;
-        list-style-type:none;
-    } 
-    header .itembread ul li {
-        margin-right: 10px;
-    }
-    header .itembread ul li .item2{
-        color: blue;
-    }
-    header .itembread ul li .item3{
-        color: black;
-    }
-   ul span {
-        margin-right: 10px;
-   }
-   main section .para {
-        margin-left: 20px;
-   }
-     main #article{
-        display:flex.;
-    } 
-   main  #article .article1{
-        border: 5px solid rgb(143, 128, 128);
-        width: 85%;
-        margin-left: 30px;
-    }
-    .gameimage img {
-        width: 90% ;
-        height: 400PX;
-    }
- }
